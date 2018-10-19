@@ -1,4 +1,5 @@
-### Nest + Angular Universal boilerplate
+# Nest + Angular Universal boilerplate
+### A minimal Nest + Universal boilerplate
 
 This is a simple boilerplate for a app using NestJS as backend and Angular Universal as frontend.
 
