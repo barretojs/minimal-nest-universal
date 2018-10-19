@@ -8,8 +8,8 @@ I'll continue to work on this boilerplate to make it better, but it already work
 
 It just shows a blank page with a text on it.
 
-..* npm build -> build the whole project
-..* npm start -> run the project with ts-node
-..* npm run start:dev -> run the project with nodemon (IMPORTANT: THE ANGULAR MUST BE BUILT ALREADY!)
-..* npm run start:prod -> run the compile project (from /dist)
-..* npm test -> run jest
+* npm build -> build the whole project
+* npm start -> run the project with ts-node
+* npm run start:dev -> run the project with nodemon (IMPORTANT: THE ANGULAR MUST BE BUILT ALREADY!)
+* npm run start:prod -> run the compile project (from /dist)
+* npm test -> run jest
