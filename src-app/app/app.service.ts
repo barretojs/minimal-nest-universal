@@ -4,9 +4,9 @@ import { environment } from '../environments/environment';
 
 @Injectable({ providedIn: 'root' })
 export class AppService {
-  constructor(private readonly http: HttpClient) {}
+  constructor(private http: HttpClient) {}
 
   getRoot() {
-    return this.http.get(`${environment.apiUrl}`);
+    return this.http.get(`${environment.apiUrl}/api/data`);
   }
 }

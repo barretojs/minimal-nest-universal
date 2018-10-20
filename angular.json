@@ -54,7 +54,7 @@
           "options": {
             "outputPath": "dist/front/server",
             "main": "src-app/main.server.ts",
-            "tsConfig": "src-app/tsconfig.app.json"
+            "tsConfig": "src-app/tsconfig.server.json"
           },
           "configurations": {
             "production": {
@@ -99,7 +99,10 @@
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
-            "tsConfig": ["src-app/tsconfig.app.json", "src-app/tsconfig.spec.json"],
+            "tsConfig": [
+              "src-app/tsconfig.app.json",
+              "src-app/tsconfig.spec.json"
+            ],
             "exclude": ["**/node_modules/**"]
           }
         }

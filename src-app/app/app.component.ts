@@ -1,5 +1,5 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
-import { Subscription } from 'rxjs';
+import { Observable } from 'rxjs';
 import { AppService } from './app.service';
 
 @Component({
@@ -7,19 +7,14 @@ import { AppService } from './app.service';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent implements OnInit, OnDestroy {
-  title;
-  sub: Subscription;
+export class AppComponent implements OnInit {
+  title: any;
 
   constructor(private readonly appService: AppService) {}
 
   ngOnInit() {
-    this.sub = this.appService
-      .getRoot()
-      .subscribe(title => (this.title = title));
-  }
-
-  ngOnDestroy() {
-    this.sub.unsubscribe();
+    this.appService.getRoot().subscribe(resp => {
+      this.title = resp;
+    });
   }
 }
